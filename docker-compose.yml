@@ -8,7 +8,7 @@ services:
     networks:
       - db-network
     volumes:
-      - db-volume: ${POSTGRES_PGDATA}
+      - db-volume:${POSTGRES_PGDATA}
     env_file:
       - .env.db
 
