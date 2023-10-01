@@ -7,7 +7,6 @@ services:
     restart: "unless-stopped"
     networks:
       - db-network
-    env_file: .env.db
     volumes:
       - db-volume:${PGDATA}
     env_file:
